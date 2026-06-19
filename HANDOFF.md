@@ -5,6 +5,23 @@ folder; treat it as the repo root once migrated to `b1rdmania/legaltech-teardown
 
 ---
 
+## 🟢 SESSION 2026-06-19 (LATEST) — editorial re-cut BUILT in source (supersedes the tier build below)
+
+Andy ran a live voice-note pass; this is built in source and is **mirror+deploy-ready**.
+Build agent: **only mirror + redeploy** — do not re-edit.
+
+- **Tiers (in `companies.json`):** `scorecard`(7 worth-watching) · `thesis2`(3) · `whitespace`(2) · `eye`(1, ACT) · `killed`(6) · `hidden`(12, parked — kept in data, rendered nowhere). **Leah + Airia deleted from data entirely.**
+- **Worth watching (7):** DeepJudge, Lawstronaut, Syllo, Ankar, Moonlit, Definely, Wexler.
+- **Thesis-2 (firm play):** Scissero (anchor — SRA-regulated, design red-flag kept on substance), Moritz, Cicero.
+- **White space:** KomplyAI (reframed) + Truth Systems; ACT as the "liked on the floor" callout.
+- **Kill-list (named):** Structureflow, Jigsaw, Vesence, Eudia, Newcode, Kuberno — "a feature, not an app to scale." Resolves the old kill-list-names-kept-companies tension.
+- **Voice:** every company leads with first-person *My take*; all "eye/screen/scored-screen/composite/confidence/[PROVISIONAL]" meta stripped from the public site. Reads as 100% Andy's work. (Data still holds the numbers/conf; just not surfaced.)
+- **Model v2 penalties formalised** in data: geo −5 / stale −4 / design −3, rendered as badges. Only Scissero shows one visibly (design −3, kept on substance); Moonlit geo-exempt with a note ("EU is the moat, not the cap"). The cut did most of the de-mushing.
+- **Logos:** favicon per company (Google s2). Per-company detail pages: My take → How I rated it → The facts → Where it's weak → Sources.
+- **TODO not yet done:** de-process the public `methodology.md`/`BRIEF.md` (still describe an automated process); Lawstronaut + Ankar takes are my drafts in Andy's voice (he'll tweak by voice note); logos could upgrade favicon→screenshots.
+
+---
+
 ## 📌 SESSION 2026-06-19 — deployed live + editorial decisions (read this first)
 
 This session: synced source → teardown mirror, **deployed the site live and public**,
@@ -25,7 +42,18 @@ re-mirror + redeploy (commands at the bottom).
     Andy chose the public launch knowingly. This raises the bar on accuracy/legal — see
     the KomplyAI reframe below, which is now a live-site correctness + exposure issue.
 
-### DECIDED editorial re-cut (implement in source, then re-mirror)
+### ✅ IMPLEMENTED 2026-06-19 (source `8a9b9b9` → mirror `dd9e331` → live)
+The re-cut below is **built and deployed**. `tier` field added to `companies.json` +
+`dataset/scorecard.json` (20 scorecard / 4 featured / 9 parked); the Map filters to the 20;
+new `#firm` (Moritz+Cicero Thesis-2) and `#rest` (parked footer) sections; KomplyAI reframed
+in `#space`; Awesome Compliance named in the eye-beats-screen callout. Live + verified at
+https://legaltech-teardown.pages.dev.
+**Residual tension to resolve (editorial, left for Andy/next agent):** the kill-list prose in
+`App.tsx` still names several companies that are now in the top-20 scorecard as kills
+(Airia, Eudia, Newcode, Wexler, Structureflow, Jigsaw). Score keeps them; the kill-list voice
+buries them. Reconcile the prose or accept the "screen vs eye" split deliberately.
+
+### DECIDED editorial re-cut (now built — see above)
 **1. Scorecard 33 → 20.** Andy: *"30 felt like filler; 20 feels editorial."* The cut falls
 on a natural line — **composite ≥ 21.** Below that is early, thin-interop vertical apps.
 
